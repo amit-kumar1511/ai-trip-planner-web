@@ -6,7 +6,7 @@ import App from './App.jsx'
 
 import { createBrowserRouter,  RouterProvider } from 'react-router-dom'
 import CreateTrip from './create-trip/CreateTrip.jsx'
-import Header from './components/custom/Header'
+
 import { Toaster } from 'react-hot-toast'
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import TripView from './view-trip/[tripId]/TripView'
