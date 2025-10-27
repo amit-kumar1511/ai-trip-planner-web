@@ -33,9 +33,9 @@ querySnapshot.forEach((doc) => {
   }
   return (
 
-    <div className='p-10 md:px-20 lg:px-44 xl:px-56  '>
+    <div className='p-5 md:px-20 lg:px-44 xl:px-56  '>
 <h2 className='font-bold text-3xl flex items-center justify-center gap-1.5'>My  <span className="text-red-500">Trips</span>    Plan</h2>
- <hr className="w-45 mx-auto border-1 border-blue-500 rounded mt-1"/>
+ <hr className="w-45 mx-auto  border-blue-500 rounded mt-1"/>
 
 <div className='grid grid-cols-2 mt-7 md:grid-cols-3 gap-5'>
   {userTrips.length > 0 && 

@@ -39,7 +39,7 @@ const MyTripCart = ({ trip }) => {
       onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
     >
       <div className="hover:shadow-md border rounded-xl p-2 hover:scale-105 transition-all cursor-pointer">
-        <div className="w-full sm:w-[290px] md:w-[210px] lg:w-[218px] xl:w-[270px] h-[160px] sm:h-[200px] md:h-[220px] lg:h-[240px] rounded-xl overflow-hidden bg-gray-200 flex-shrink-0 transition-all">
+        <div className="w-full sm:w-[290px] md:w-[130px] lg:w-[218px] xl:w-[268px] h-[160px] sm:h-[200px] md:h-[220px] lg:h-[240px] rounded-xl overflow-hidden bg-gray-200 flex-shrink-0 transition-all">
           <img
             src={photoUrl || "/placeholder.jpg"}
             className="w-full h-full object-cover object-center "

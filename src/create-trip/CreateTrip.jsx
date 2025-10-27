@@ -178,7 +178,7 @@ const saveAiTrip = async (TripData) => {
   return () => clearTimeout(debounceRef.current); // cleanup
 }, [query]);
   return (
-    <>
+   
     
     <div className="sm:px-10 md:px-30 lg:px-56 xl:px-62 px-5 mt-3 sm:m-10">
       <h2 className="font-bold text-3xl">Tell us your travel preferences 🏕️🌴</h2>
@@ -350,7 +350,7 @@ onChange={(e) => {
 
     </div>
 
-</>
+
   );
   
 };
