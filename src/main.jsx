@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { Children, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -6,7 +6,7 @@ import App from './App.jsx'
 
 import { createBrowserRouter,  RouterProvider } from 'react-router-dom'
 import CreateTrip from './create-trip/CreateTrip.jsx'
-
+import Layout from '@/Layout'
 import { Toaster } from 'react-hot-toast'
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import TripView from './view-trip/[tripId]/TripView'
@@ -15,6 +15,11 @@ import MyTrip from './myTrip/MyTrip'
 
 const router = createBrowserRouter([
   {
+     element: <Layout />,
+      children: [
+  
+  {
+
     path:'/',
     element:<App/>
   },
@@ -29,8 +34,10 @@ const router = createBrowserRouter([
   {
     path:'/my-trip',
     element:<MyTrip/>
-  }
-])
+  },
+],
+  },
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

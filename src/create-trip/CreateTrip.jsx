@@ -7,6 +7,7 @@ import { Button } from '../components/ui/button'
 import  toast  from "react-hot-toast";
 import { AI_PROMPT } from "@/constants/option";
 import { chatSession } from "@/service/AiModel";
+
 import {
   Dialog,
   DialogContent,
@@ -177,6 +178,8 @@ const saveAiTrip = async (TripData) => {
   return () => clearTimeout(debounceRef.current); // cleanup
 }, [query]);
   return (
+    <>
+    
     <div className="sm:px-10 md:px-30 lg:px-56 xl:px-62 px-5 mt-3 sm:m-10">
       <h2 className="font-bold text-3xl">Tell us your travel preferences 🏕️🌴</h2>
       <p className="mt-3 text-gray-500 text-xl">
@@ -271,12 +274,12 @@ onChange={(e) => {
 
       <div>
         <h1 className="text-xl font-bold mb-3 mt-10">What is Your Budget ?</h1>
-        <div className="grid grid-cols-3 gap-5 mt-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-5 mt-5">
           {SelectBudgetOptions.map((item, i) => (
             <div
               key={i}
              onClick={()=>handleInputChange('budget',item.title)}
-              className={`p-4 border cursor-pointer rounded-lg hover:shadow-lg 
+              className={`p-2 sm:p-4 border cursor-pointer rounded-lg hover:shadow-lg 
               ${formData?.budget===item.title&&' border-black shadow-lg'}
               `}>
               <h2 className="text-4xl">{item.icon}</h2>
@@ -290,12 +293,12 @@ onChange={(e) => {
 
       <div>
         <h1 className="text-xl font-bold mt-10 mb-3">Who do you plan on traveling with on your next adventure ?</h1>
-        <div className="grid grid-cols-3 gap-5 mt-5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3  sm:gap-5 mt-5">
           {SelectTravelsList.map((item, i) => (
             <div
               key={i}
                onClick={()=>handleInputChange('traveler',item.people)} 
-              className={`p-4 border cursor-pointer rounded-lg hover:shadow-lg
+              className={`p-2 sm:p-4 border cursor-pointer rounded-lg hover:shadow-lg
               ${formData?.traveler===item.people&&' border-black shadow-lg'}
               ` }>
               <h2 className="text-4xl">{item.icon}</h2>
@@ -347,8 +350,9 @@ onChange={(e) => {
 
     </div>
 
-
+</>
   );
+  
 };
 
 export default createTrip;
