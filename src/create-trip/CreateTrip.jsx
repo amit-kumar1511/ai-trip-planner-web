@@ -7,6 +7,7 @@ import { Button } from '../components/ui/button'
 import  toast  from "react-hot-toast";
 import { AI_PROMPT } from "@/constants/option";
 import { chatSession } from "@/service/AiModel";
+import Footer from "@/view-trip/component/Footer";
 
 import {
   Dialog,
@@ -67,8 +68,8 @@ const onGgenerateTrip = async()=>{
   }
 
 
-   if(formData?.noOfDays>5 || !formData?.location || !formData?.budget || !formData?.traveler){
-    toast.error("Number of days cannot be more than 5!");
+   if(formData?.noOfDays>7 || !formData?.location || !formData?.budget || !formData?.traveler){
+    toast.error("Please fill all required fields and keep days ≤ 7");
     return;
    
   }
@@ -273,7 +274,7 @@ onChange={(e) => {
       </div>
 
       <div>
-        <h1 className="text-xl font-bold mb-3 mt-10">What is Your Budget ?</h1>
+        <h1 className="text-2xl font-bold mb-3 mt-10">What is Your Budget ?</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-5 mt-5">
           {SelectBudgetOptions.map((item, i) => (
             <div
@@ -347,7 +348,7 @@ onChange={(e) => {
 </Dialog>
 
 
-
+<Footer/>
     </div>
 
 

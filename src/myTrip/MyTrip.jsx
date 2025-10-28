@@ -4,6 +4,7 @@ import {db} from '@/service/FirebaseConfig'
 import { collection,getDocs,query,where } from 'firebase/firestore'
 import {  useNavigation } from 'react-router-dom'
 import MyTripCart from './MyTripCart'
+import Footer from "@/view-trip/component/Footer";
 const MyTrip = () => {
    
 const navigation = useNavigation();
@@ -45,6 +46,7 @@ querySnapshot.forEach((doc) => {
     ))
   }
 </div>
+<Footer/>
     </div>
     
     
