@@ -1,15 +1,35 @@
-# React + Vite
+# 🌍 AI Trip Planner
+LIVE:- https://ai-trip-plan1511.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent web app that helps users plan personalized trips using AI.  
+Built with **React.js**, **Tailwind CSS**, **Google Places API**, **Unsplash API**, and **Firebase** (Firestore + Google Authentication).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧠 **AI-Powered Trip Planning** – Generate travel itineraries based on user preferences (destination, duration, interests, etc.)
+- 🗺️ **Google Places Integration** – Get real-time data about attractions, restaurants, and landmarks.
+- 🖼️ **Beautiful Destination Images** – Powered by **Unsplash API** for high-quality images.
+- 🔥 **Firebase Database** – Save user plans, favorites, and travel history in Firestore.
+- 🔐 **Secure Google Authentication** – Sign in with Google to manage and sync your trips.
+- 📱 **Responsive UI** – Built with **Tailwind CSS** for a fast and modern design.
+- ⚡ **Optimized Performance** – Minimal load times and smooth transitions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend | React.js, Tailwind CSS |
+| APIs | Google Places API, Unsplash API |
+| Backend/Database | Firebase Firestore |
+| Authentication | Firebase Google Auth |
+| Hosting | Firebase Hosting / Vercel (optional) |
+
+---
 
 
-emojee -emoji picker
+
+
