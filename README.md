@@ -25,8 +25,8 @@ Built with **React.js**, **Tailwind CSS**, **Google Places API**, **Unsplash API
 | Frontend | React.js, Tailwind CSS |
 | APIs | Google Places API, Unsplash API |
 | Backend/Database | Firebase Firestore |
-| Authentication | Firebase Google Auth |
-| Hosting | Firebase Hosting / Vercel (optional) |
+| Authentication | Google Auth |
+| Hosting | Vercel  |
 
 ---
 
